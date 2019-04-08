@@ -121,9 +121,9 @@ p {
   }
 
 .nav {
-    z-index: 2;
+    z-index: 3;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .nav .meny ul{
@@ -133,6 +133,7 @@ p {
 .nav .meny ul li{
     display: inline;
     color: white;
+    font-size: 0.8em;
     padding: 0em 1em 0em 1em;
 }
 
@@ -150,24 +151,9 @@ p {
   margin-left: 10px;
 }
 
-
-.nav .meny ul li a::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 1px;
-  background: rgb(255, 82, 232);
-  transition: width .3s;
-}
-
-.nav .meny ul li a:hover::after {
-  width: 60%;
-}
-
-
 .logo{
     float: left;
-    margin-top: 3em;
+    margin-top: 2.6em;
     margin-left: 20px;
 }
 
@@ -185,9 +171,89 @@ p {
 
 
 .logo img {
-  width: 50px;
+  width: 120px;
 }
 
+
+/* Header background */
+.background-img{
+  background-image: url("image/studenterbergen.jpg");
+  filter: blur(4px);
+  width: 100%;
+  height: 500px; 
+  position: absolute;
+}
+
+.backGround-filter{
+  opacity: 0.8;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+}
+
+.dec-lines{
+  opacity: 0.3;
+  max-width: 3%;
+  height: 126%;
+  position: absolute;
+  left: 15em;
+  top: -10em;
+  z-index: 2;
+  transform: rotate(-50deg);
+}
+
+.dec-lines2{
+  opacity: 0.3;
+  max-width: 3%;
+  height: 126%;
+  position: absolute;
+  right: 17em;
+  top: -10em;
+  z-index: 2;
+  transform: rotate(24deg);
+}
+
+.crum{
+  float: left;
+}
+
+.crum ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.crum li{
+  display: inline;
+
+}
+
+.crum li a{
+  color: white;
+  text-decoration: none;
+}
+
+.crum li{
+  color: white;
+}
+
+
+.crum .crum-end a{
+  color: #FF5F5F;
+}
+
+.title h1, h3{
+  color: white;
+}
+
+.title h1{
+  margin-top: -0.2em;
+}
+
+.title h3{
+  margin-top: -0.8em;
+}
 
 
 
