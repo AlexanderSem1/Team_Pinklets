@@ -8,4 +8,129 @@
 /*  Faisal Code End */
         
 /* Merethes kode start */
+
+.sliderImg {  
+    display: none  
+}  
+    .sliderImg img {  
+        width: 100%;  
+        border-radius: 2px;
+        
+    }  
+.slidercontainer {  
+    max-width: 1000px;  
+    position: relative;  
+    margin: auto;  
+}  
+.previous, .next {  
+    cursor: pointer;  
+    position: absolute; 
+    top: 50%;  
+    width: auto;  
+    padding: 16px;  
+    margin-top: -22px;  
+    color: white;   
+    font-size: 1.5em;  
+    transition: 0.6s ease; 
+}  
+.next {  
+    right: 0;     
+}  
+
+    .previous:hover, .next:hover {  
+        color: rgba(115, 115, 115, 0.8);  
+    }  
+
+/* --- Fading --- */  
+.fade {  
+    -webkit-animation-name: fade;  
+    -webkit-animation-duration: 1.5s;  
+    animation-name: fade;  
+    animation-duration: 1.5s;  
+}  
+@-webkit-keyframes fade {  
+    from {  
+        opacity: 0.8  
+    }  
+    to {  
+        opacity: 1  
+    }  
+}  
+
+@keyframes fade {  
+    from {  
+        opacity: 0.8  
+    }  
+    to {  
+        opacity: 1  
+    }  
+}  
+/* Merethes kode slutt */
+
+
+
+.RelNyheter{
+    background-color: #FFF1F1; 
+    height: 147px;
+    font-family: Noto Sans, Helvetica, sans-serif;
+}
+footer{
+
+    background-color: #012255;
+    color: whitesmoke;
+    font-family: Helvetica, Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 10% 20% 20% 20% 20% 10%;
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 20px;
+    height: 500px;
+    width: 101vw;
+    margin-left: -1vw;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.footerLogo{
+    grid-column: 2/4;
+    width: 50%;
+    margin: 30px 10px 10px;
+    
+}
+
+.kontaktInfo{
+grid-column: 2/3;
+margin: 0px 10px 10px;
+}
+
+.sortcutNavs{
+    grid-column: 4/6;
+    grid-row: 1;
+    margin-top: 20px;
+    text-align: right;
+    
+}
+
+.sortcutNavs ul{
+    padding: 0;
+}
+
+.sortcutNavs li{
+    padding: 0;
+    list-style: none;
+    margin:25px;
+}
+
+.sosialeMedier{
+    grid-column: 3/6;
+    grid-row: 2;
+    margin-top: 120px;
+    text-align: right;
+    font-size: 2em;
+    
+}
+
+.sosialeMedier a{
+    margin: 20px 20px;
+    
+}
 /* Merethes kode slutt */
