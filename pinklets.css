@@ -202,6 +202,10 @@ p {
   opacity: 0.3;
 }
 
+.meny-studier{
+  font-weight: bold;
+  margin-right: 20px;
+}
 
 /* Header background */
 .background-img{
