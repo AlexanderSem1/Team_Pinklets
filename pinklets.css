@@ -779,9 +779,24 @@ p {
 .nythetContainer p{
     margin-bottom: 50px;
 }
+
+/*.img-h4 a:hover{
+    text-decoration: underline;
+  color: #FF3D3D;
+  opacity: 0.8;
+  transition: 0.5s;
+
+}
+.nythetContainer a{
+text-decoration: none;
+color: black;
+}*/
+
+
+
 footer{
 
-    background-color: #012255;
+    background-color: #0D2448;
     color: white;
     font-family: Noto Sans, Helvetica, Arial, sans-serif;
     
@@ -813,11 +828,14 @@ text-decoration: underline;
   transition: 0.5s;
 }
 .kontaktInfo{
- 
+   
     color: whitesmoke;
 }
-
+.kontaktInfo p, .kontaktInfo h4{
+    line-height: 10px; 
+}
 .kontaktLink{
+    line-height: -10%;
     width: 150%;
     color: #FF5F5F;
 }
@@ -884,8 +902,15 @@ footer h4{
     margin-right: 10px;
 }
 
-.mobilfooter{
-    display: none;
+.subFooter{
+    padding: 0.1px 0 0.1px;
+    background-color: #0C173B;
+   
+   
 }
-
+.subFooter h6{
+    margin-left: 18%;
+    color: #AAAAAA;
+    
+}
 /* Merethes kode slutt */
