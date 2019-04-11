@@ -48,6 +48,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  margin-top: 100px;
 }
 
 h3 {
@@ -241,7 +242,7 @@ p {
   opacity: 0.3;
   max-width: 3%;
   /*height: 126%;*/
-  height: 87%;
+  height: 100%;
   position: absolute;
   /*left: 15em;*/
   left: 40em;
@@ -402,6 +403,12 @@ p {
   font-size: 2em;
 	cursor: pointer;
 }
+
+.dropdownbutton:hover{
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
 .information{
   width: 71%;
   padding-left: 86px;
@@ -416,9 +423,15 @@ p {
   color:#FF5F5F;
   width: 90%;
 }
-.qoute-signature{
+.qoute-signature a{
   color: black;
 }
+
+.qoute-signature a:hover{
+ opacity: 0.5;
+  transition: 0.5s;
+}
+
 .qouteimg{
   width: 15%;
   margin-right: 40px;
@@ -452,34 +465,92 @@ p {
 /* Subscribe */
 
 .subscribe_box{
-    padding: 10px;
-    background-color: #FFE7E7;        
+    background-color: rgb(255, 242, 242);  
+    margin-bottom: 500px; 
+    margin-top: 400px;     
+}
+
+.subscribe_box h4{
+  padding: 0 0 15px 1.5em;
+  margin-bottom: -10px;
+  font-size: 1.5em;
+}
+
+.subscribe_box p{
+  padding: 0 0 15px 2em;
 }
 
 .clear .sub_button{
-    padding: 15px 95px; 
-    background-color: #FF3D3D; 
+    padding: 15px 60px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 78.5%; 
+    background-color: #FF5F5F; 
     border-radius: 6px; 
     color: white; 
     margin-top: 20px;
-    border: 2px solid #FF3D3D; 
+    border: 2px solid #FF5F5F; 
+}
+
+.clear .sub_button:hover{
+    background-color: #FF3D3D; 
+    border: 2px solid #FF3D3D;
+    transition: 0.5s; 
+}
+
+.brev-icon{
+  position: absolute;
+  z-index: 2;
+  width: 40%;
+  margin-left: 55%;
+  margin-top: 5%;
+}
+
+.brev-icon2{
+  position: absolute;
+  z-index: 2;
+  width: 30%;
+  margin-left: 55%;
+  margin-top: 35%;
+}
+
+#mce-EMAIL{
+  margin-left: 30px;
+  padding: 15px 60px;
+  width: 50%;
+  border-radius: 6px; 
+  border: 1px solid white;
+  
 }
 
 /* Faglarere*/
-.prof_pic_name{
+/*.prof_pic_name{
     display: inline-block; 
-}
+}*/
 
 .teacher-1{
     border-radius: 80%;
 }
 
-#mce-EMAIL{
-    padding: 15px 60px;
-    border-radius: 6px; 
-    border: 1px solid white;
-    
+.lærer{
+  max-width: 100%;
+  padding: 10px 0 10px 0;
 }
+
+.lærer h4 a{
+  color: #FF5F5F;
+}
+
+.lærer h4 a:hover{
+  opacity: 0.5;
+  transition: 0.5s; 
+}
+
+.lærer p{
+  margin-top: -15px;
+}
+
+
 
 
 /* map */
@@ -526,12 +597,226 @@ p {
 /* bennis code end */
 
 
+/* Merethes kode*/
+
+.sliderImg {  
+  display: none  
+}  
+  .sliderImg img {  
+      width: 100%;  
+      border-radius: 2px;
+      
+  }  
+.slidercontainer {  
+  max-width: 1000px;  
+  position: relative;  
+  margin: auto;  
+}  
+.previous, .next {  
+  cursor: pointer;  
+  position: absolute; 
+  top: 50%;  
+  width: auto;  
+  padding: 16px;  
+  margin-top: -22px;  
+  color: white;   
+  font-size: 1.5em;  
+  transition: 0.6s ease; 
+}  
+.next {  
+  right: 0;     
+}  
+
+  .previous:hover, .next:hover {  
+      color: rgba(115, 115, 115, 0.8);  
+  }  
+
+/* --- Fading --- */  
+.fade {  
+  -webkit-animation-name: fade;  
+  -webkit-animation-duration: 1.5s;  
+  animation-name: fade;  
+  animation-duration: 1.5s;  
+}  
+@-webkit-keyframes fade {  
+  from {  
+      opacity: 0.8  
+  }  
+  to {  
+      opacity: 1  
+  }  
+}  
+
+@keyframes fade {  
+  from {  
+      opacity: 0.8  
+  }  
+  to {  
+      opacity: 1  
+  }  
+}  
 
 
 
 
+.RelNyheter{
+  background-color: #FFF1F1; 
+  max-width: 100%;
+  /*height: 15%;*/
+  margin: 100px 0 70px 0;
+
+}
+.RelNyheter h2{
+margin-top: 30px;
+}
 
 
+.nythetContainer{
+margin-bottom: 100px;
+
+}
+
+.nythetContainer img{
+  width: 100%;
+  
+}
+
+.nythetContainer p{
+  margin-bottom: 50px;
+}
+
+/*.img-h4 a:hover{
+  text-decoration: underline;
+color: #FF3D3D;
+opacity: 0.8;
+transition: 0.5s;
+
+}
+.nythetContainer a{
+text-decoration: none;
+color: black;
+}*/
+
+
+
+footer{
+
+  background-color: #002A4D;
+  color: white;
+  font-family: Noto Sans, Helvetica, Arial, sans-serif;
+  
+  height: 600px;
+  max-width: 100%;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+footer li{
+  list-style: none;
+  
+}
+.footerLogo{
+  width: 20%;
+  margin: 45px  0px 20px;
+  
+}
+
+footer a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+footer a:hover{
+text-decoration: underline;
+color: #FF3D3D;
+transition: 0.5s;
+}
+.kontaktInfo{
+ 
+  color: whitesmoke;
+}
+.kontaktInfo p, .kontaktInfo h4{
+  line-height: 10px; 
+}
+.kontaktLink{
+  line-height: -10%;
+  width: 150%;
+  color: #FF5F5F;
+}
+
+.kontaktLink:hover{
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+footer h4{
+  font-size: 1.2em;
+}
+.sortcutNavs{
+  margin-top: 20px;
+  text-align: right;
+  
+  
+}
+
+.sortcutNavs2{
+ 
+  margin-top: 20px;
+  margin-left: 0;
+  text-align: left;
+  font-weight: bold;
+  border-left: solid #FFF1F1 1px;
+}
+
+.sortcutNavs2 ul{
+  padding: 0;
+
+}
+
+.sortcutNavs ul{
+  padding: 0;
+}
+
+.sortcutNavs li{
+  padding: 0;
+  margin:25px;
+}
+
+.sortcutNavs2 li{
+  padding: 0;
+  margin:25px;
+}
+
+.sosialeMedier{
+ font-size: 0.8em;
+}
+.sosialeMedier ul li{
+
+  margin: 15px 0px 15px;
+  padding-left: 0;
+}
+
+.sosialeMedier ul li:hover{
+  color: #FF5F5F;
+  transition: 0.5s;
+}
+
+.fab{
+  margin-right: 10px;
+}
+
+.subFooter{
+  padding: 0.1px 0 0.1px 0;
+  background-color: #002543;
+  max-width: 100%;
+ 
+}
+.subFooter h6{
+  margin-left: 18%;
+  color: #AAAAAA;
+  
+}
+/* Merethes kode slutt */
 
 
 
@@ -695,96 +980,586 @@ p {
   }
 }
 
+@media only screen and (max-width: 600px) {
+
+
+/* Pinklets code */
+
+/* menu */
+/* bennis code */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.nav {
+  z-index: 3;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.nav .meny ul{
+  color: #002C39;
+}
+
+.nav .meny ul li{
+  display: inline;
+  color: white;
+  font-size: 1em;
+  padding: 0em 1em 0em 1em;
+}
+
+.nav .meny ul li a:hover{
+text-decoration: underline;
+color: #FF3D3D;
+transition: 0.5s;
+}
+
+.nav .meny ul li a{
+display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+.nav .meny ul li a img{
+width: 14px;
+}
+
+.down{
+margin-left: 10px;
+}
+
+.logo{
+  float: left;
+  margin-top: 2.6em;
+  margin-left: 20px;
+}
+
+.logo:hover{
+transform: scale(1.1);
+transition: 1s;
+}
+
+
+
+.meny{
+  float: right;
+  margin-top: 2em;
+}
+
+
+.logo img {
+width: 170px;
+}
+
+.nav .meny .lang a{
+color: #FF5F5F;
+/*border: 1px solid #FF5F5F;*/
+padding: 0 4px 0 4px;
+border-radius: 5px;
+}
+
+.nav .meny .lang a:hover{
+background-color: #FF5F5F;
+color: white;
+text-decoration: none;
+transition: 0.5s;
+}
+
+.meny-line{
+border: 1.2px solid white;
+width: 82%;
+margin-right: 80px;
+opacity: 0.3;
+}
+
+.meny-studier{
+font-weight: bold;
+margin-right: 20px;
+}
+
+/* Header background */
+.background-img{
+background-image: url("image/studentsheader.jpg");
+background-position: center;
+background-repeat: no-repeat; 
+background-size: cover;
+filter: blur(4px);
+width: 100%;
+height: 500px; 
+position: absolute;
+animation-name: imageheader;
+animation-iteration-count: infinite;
+animation-duration: 60s;
+animation-delay: 10s;
+}
+
+@keyframes imageheader{
+
+from {background-image: url("image/studenterbergen.jpg"); display: none;transition: 5s;}
+to {background-image: url("image/studentsheader.jpg"); display: block;transition: 5s;}
+}
+
+.backGround-filter{
+opacity: 0.8;
+width: 100%;
+height: 500px;
+position: absolute;
+}
+
+.dec-lines{
+opacity: 0.3;
+max-width: 3%;
+/*height: 126%;*/
+height: 100%;
+position: absolute;
+/*left: 15em;*/
+left: 40em;
+top: -10em;
+z-index: 2;
+/*transform: rotate(-50deg);*/
+transform: rotate(-35deg);
+}
+
+.dec-lines2{
+display: none;
+opacity: 0.3;
+max-width: 3%;
+height: 126%;
+position: absolute;
+/*right: 17em;*/
+right: 25em;
+top: -10em;
+z-index: 2;
+/*transform: rotate(24deg);*/
+transform: rotate(0deg);
+}
+
+.crum{
+float: left;
+}
+
+.crum ul{
+list-style-type: none;
+padding: 0;
+margin: 0;
+
+}
+
+.crum li{
+display: inline;
+
+}
+
+.crum li a{
+color: white;
+text-decoration: none;
+}
+
+.crum li a:hover{
+opacity: 0.5;
+transition: 0.5s;
+}
+
+.crum li{
+color: white;
+}
+
+
+.crum .crum-end a{
+color: #FF5F5F;
+}
+
+.title h1, h3{
+color: white;
+}
+
+.title h1{
+margin-top: -0.2em;
+}
+
+.title h3{
+margin-top: -0.8em;
+margin-bottom: 3em;
+}
+
+
+.apply{
+background-color: #FFF1F1;
+border-radius: 3px;
+padding:  0px 20px 0px 20px;
+z-index: 3;
+position: relative;
+}
+
+.btn a{
+background-color: #FF5F5F;
+width: 200px;
+float: right;
+padding: 1em;
+border-radius: 5px;
+margin: 2em 0 2em 0;
+text-align: center;
+color: white;
+text-decoration: none;
+}
+
+.btn a:hover{
+background-color: #FF3D3D;
+transition: 0.5s;
+}
+
+.apply p{
+margin-top: -1em;
+}
+
+.text-link{
+color: red;
+}
+
+.text-link:hover{
+opacity: 0.5;
+transition: 0.2s;
+}
+
+.gen-info{
+margin-top: 30px;
+
+}
+.gen-info h5, .gen-info2 h5{
+font-weight: bold;
+margin-bottom: -15px;
+}
+
+.header-sep-line{
+border: 3px solid #FFF1F1;
+
+}
+
+
+/*dropdown thingy*/
+/*Faisal code start*/
+.ingres p {
+width: 70%;
+font-size: 1.5em;
+color: #012255;
+font-weight: 100;
+margin-top: 70px;
+margin-bottom: 100px;
+}
+/*.drop-down-hr{
+margin-bottom: -20px;
+}*/
+.dropdownbutton li{
+display: inline;
+padding: 10px 10px 10px 10px;
+font-weight: 100;
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+}
+.droparrow i{
+font-size: 2em;
+margin-left: -30px;
+margin-right: 30px;
+cursor: pointer;
+}
+.dropdownbutton .info-heading {
+
+font-size: 1em;
+cursor: pointer;
+}
+
+.dropdownbutton:hover{
+opacity: 0.5;
+transition: 0.5s;
+}
+
+.information{
+width: 71%;
+padding-left: 86px;
+margin-bottom: 70px;
+margin-top: 40px;
+border-left: 1px solid #FFF1F1;
+}
+.qouteblock{
+margin-bottom: 20px;
+}
+.quoute{
+color:#FF5F5F;
+width: 90%;
+}
+.qoute-signature a{
+color: black;
+}
+
+.qoute-signature a:hover{
+opacity: 0.5;
+transition: 0.5s;
+}
+
+.qouteimg{
+width: 15%;
+margin-right: 40px;
+float: left;
+border-radius: 100%;
+box-shadow: -1px -2px 59px -22px rgba(255, 61, 61, 0.6S);
+}
+.st-text{
+width: 100%;
+}
+.st-text li{
+list-style-type: circle;
+font-size: 1.2em;
+line-height: 2em;
+}
+.so-heading{
+padding: 1em;
+background-color: #FFF1F1;
+color: #FF5F5F;
+}
+
+.information{
+display: none;
+}
+
+/*faisal code stop*/
+
+
+
+
+/* Subscribe */
+
+.subscribe_box{
+  background-color: rgb(255, 242, 242);  
+  margin-bottom: 500px; 
+  margin-top: 400px;     
+}
+
+.subscribe_box h4{
+padding: 0 0 15px 1.5em;
+margin-bottom: -10px;
+font-size: 1.5em;
+}
+
+.subscribe_box p{
+padding: 0 0 15px 2em;
+}
+
+.clear .sub_button{
+  padding: 15px 60px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  width: 78.5%; 
+  background-color: #FF5F5F; 
+  border-radius: 6px; 
+  color: white; 
+  margin-top: 20px;
+  border: 2px solid #FF5F5F; 
+}
+
+.clear .sub_button:hover{
+  background-color: #FF3D3D; 
+  border: 2px solid #FF3D3D;
+  transition: 0.5s; 
+}
+
+.brev-icon{
+position: absolute;
+z-index: 2;
+width: 40%;
+margin-left: 55%;
+margin-top: 5%;
+}
+
+.brev-icon2{
+position: absolute;
+z-index: 2;
+width: 30%;
+margin-left: 55%;
+margin-top: 35%;
+}
+
+#mce-EMAIL{
+margin-left: 30px;
+padding: 15px 60px;
+width: 50%;
+border-radius: 6px; 
+border: 1px solid white;
+
+}
+
+/* Faglarere*/
+/*.prof_pic_name{
+  display: inline-block; 
+}*/
+
+.teacher-1{
+  border-radius: 80%;
+}
+
+.lærer{
+max-width: 100%;
+padding: 10px 0 10px 0;
+}
+
+.lærer h4 a{
+color: #FF5F5F;
+}
+
+.lærer h4 a:hover{
+opacity: 0.5;
+transition: 0.5s; 
+}
+
+.lærer p{
+margin-top: -15px;
+}
+
+
+
+
+/* map */
+
+.container .maploc a{
+  text-decoration: none; 
+  padding: 10px 20px; 
+  border: 1px solid #FF3D3D; 
+  border-radius: 8px; 
+  margin-right: 10px;
+  color: #FF3D3D;
+}
+
+.maploc{
+  margin-bottom: 10px;
+}
+
+.maploc a:hover{
+  background-color: #FF3D3D;
+  transition: 0.5s;
+  color: white;
+}
+
+.undertitler hr{
+  margin-bottom: 10px;
+}
+
+
+.kart{
+margin-bottom: 3em;
+}
+/* Spørsmål */
+.far{
+font-size: 1.5em;
+}
+
+.spørsmål p{
+margin-top: -1em;
+}
+
+
+
+
+/* bennis code end */
+
+
 /* Merethes kode*/
 
 .sliderImg {  
-    display: none  
+display: none  
 }  
-    .sliderImg img {  
-        width: 100%;  
-        border-radius: 2px;
-        
-    }  
+.sliderImg img {  
+    width: 100%;  
+    border-radius: 2px;
+    
+}  
 .slidercontainer {  
-    max-width: 1000px;  
-    position: relative;  
-    margin: auto;  
+max-width: 1000px;  
+position: relative;  
+margin: auto;  
 }  
 .previous, .next {  
-    cursor: pointer;  
-    position: absolute; 
-    top: 50%;  
-    width: auto;  
-    padding: 16px;  
-    margin-top: -22px;  
-    color: white;   
-    font-size: 1.5em;  
-    transition: 0.6s ease; 
+cursor: pointer;  
+position: absolute; 
+top: 50%;  
+width: auto;  
+padding: 16px;  
+margin-top: -22px;  
+color: white;   
+font-size: 1.5em;  
+transition: 0.6s ease; 
 }  
 .next {  
-    right: 0;     
+right: 0;     
 }  
 
-    .previous:hover, .next:hover {  
-        color: rgba(115, 115, 115, 0.8);  
-    }  
+.previous:hover, .next:hover {  
+    color: rgba(115, 115, 115, 0.8);  
+}  
 
 /* --- Fading --- */  
 .fade {  
-    -webkit-animation-name: fade;  
-    -webkit-animation-duration: 1.5s;  
-    animation-name: fade;  
-    animation-duration: 1.5s;  
+-webkit-animation-name: fade;  
+-webkit-animation-duration: 1.5s;  
+animation-name: fade;  
+animation-duration: 1.5s;  
 }  
 @-webkit-keyframes fade {  
-    from {  
-        opacity: 0.8  
-    }  
-    to {  
-        opacity: 1  
-    }  
+from {  
+    opacity: 0.8  
+}  
+to {  
+    opacity: 1  
+}  
 }  
 
 @keyframes fade {  
-    from {  
-        opacity: 0.8  
-    }  
-    to {  
-        opacity: 1  
-    }  
+from {  
+    opacity: 0.8  
+}  
+to {  
+    opacity: 1  
+}  
 }  
 
 
 
 
 .RelNyheter{
-    background-color: #FFF1F1; 
-    background-size: cover;
-    height: 147px;
-    width: 100%;
-    font-family: Noto Sans, Helvetica, sans-serif;
-    margin: 30px 0px 30px;
+background-color: #FFF1F1; 
+max-width: 100%;
+/*height: 15%;*/
+margin: 100px 0 70px 0;
 
 }
 .RelNyheter h2{
-    margin-left: 18%;
-   padding-top: 40px;
+margin-top: 30px;
+}
+
+
+.nythetContainer{
+margin-bottom: 100px;
+
 }
 
 .nythetContainer img{
-    width: 100%;
-    
+width: 100%;
+
 }
 
 .nythetContainer p{
-    margin-bottom: 50px;
+margin-bottom: 50px;
 }
 
 /*.img-h4 a:hover{
-    text-decoration: underline;
-  color: #FF3D3D;
-  opacity: 0.8;
-  transition: 0.5s;
+text-decoration: underline;
+color: #FF3D3D;
+opacity: 0.8;
+transition: 0.5s;
 
 }
 .nythetContainer a{
@@ -796,121 +1571,126 @@ color: black;
 
 footer{
 
-    background-color: #0D2448;
-    color: white;
-    font-family: Noto Sans, Helvetica, Arial, sans-serif;
-    
-    height: 600px;
-    width: 101vw;
-    margin-left: -1vw;
-    margin-top: 20px;
-    font-size: 1.2em;
+background-color: #002A4D;
+color: white;
+font-family: Noto Sans, Helvetica, Arial, sans-serif;
+
+height: 600px;
+max-width: 100%;
+margin-top: 20px;
+font-size: 1.2em;
 }
 
 footer li{
-    list-style: none;
-    
+list-style: none;
+
 }
 .footerLogo{
-    width: 20%;
-    margin: 45px  0px 20px;
-    
+width: 20%;
+margin: 45px  0px 20px;
+
 }
 
 footer a{
-    text-decoration: none;
-    color: whitesmoke;
+text-decoration: none;
+color: whitesmoke;
 }
 
 footer a:hover{
 text-decoration: underline;
-  color: #FF3D3D;
-  transition: 0.5s;
+color: #FF3D3D;
+transition: 0.5s;
 }
 .kontaktInfo{
-   
-    color: whitesmoke;
+
+color: whitesmoke;
 }
 .kontaktInfo p, .kontaktInfo h4{
-    line-height: 10px; 
+line-height: 10px; 
 }
 .kontaktLink{
-    line-height: -10%;
-    width: 150%;
-    color: #FF5F5F;
+line-height: -10%;
+width: 150%;
+color: #FF5F5F;
 }
 
 .kontaktLink:hover{
-    text-decoration: underline;
-    transition: 0.5s;
+text-decoration: underline;
+transition: 0.5s;
 }
 
 footer h4{
-    font-size: 1.2em;
+font-size: 1.2em;
 }
 .sortcutNavs{
-    margin-top: 20px;
-    text-align: right;
-    border-right: solid #FFF1F1 2px;
-    
+margin-top: 20px;
+text-align: right;
+
+
 }
 
 .sortcutNavs2{
-   
-    margin-top: 20px;
-    margin-left: 0;
-    text-align: left;
-    font-weight: bold;
-   
 
+margin-top: 20px;
+margin-left: 0;
+text-align: left;
+font-weight: bold;
+border-left: solid #FFF1F1 1px;
 }
 
 .sortcutNavs2 ul{
-    padding: 0;
+padding: 0;
 
 }
 
 .sortcutNavs ul{
-    padding: 0;
+padding: 0;
 }
 
 .sortcutNavs li{
-    padding: 0;
-    margin:25px;
+padding: 0;
+margin:25px;
 }
 
 .sortcutNavs2 li{
-    padding: 0;
-    margin:25px;
+padding: 0;
+margin:25px;
 }
 
 .sosialeMedier{
-   font-size: 0.8em;
+font-size: 0.8em;
 }
 .sosialeMedier ul li{
-  
-    margin: 15px 0px 15px;
-    padding-left: 0;
+
+margin: 15px 0px 15px;
+padding-left: 0;
 }
 
 .sosialeMedier ul li:hover{
-    color: #FF5F5F;
-    transition: 0.5s;
+color: #FF5F5F;
+transition: 0.5s;
 }
 
 .fab{
-    margin-right: 10px;
+margin-right: 10px;
 }
 
 .subFooter{
-    padding: 0.1px 0 0.1px;
-    background-color: #0C173B;
-   
-   
+padding: 0.1px 0 0.1px 0;
+background-color: #002543;
+max-width: 100%;
+
 }
 .subFooter h6{
-    margin-left: 18%;
-    color: #AAAAAA;
-    
+margin-left: 18%;
+color: #AAAAAA;
+
 }
 /* Merethes kode slutt */
+
+
+
+
+
+}
+
