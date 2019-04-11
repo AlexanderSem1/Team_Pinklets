@@ -1,4 +1,25 @@
 // Alex Code Start 
+
+function noroffOslo() {
+	let location = "Noroff Oslo"
+	document.getElementById('gmap_canvas').src = "https://maps.google.com/maps?q=" + location + "&t=&z=12&ie=UTF8&iwloc=&output=embed"
+}
+
+function noroffStavanger() {
+	let location = "Noroff Stavanger"
+	document.getElementById('gmap_canvas').src = "https://maps.google.com/maps?q=" + location + "&t=&z=12&ie=UTF8&iwloc=&output=embed"
+}
+
+function noroffBergen() {
+	let location = "Noroff Bergen"
+	document.getElementById('gmap_canvas').src = "https://maps.google.com/maps?q=" + location + "&t=&z=12&ie=UTF8&iwloc=&output=embed"
+}
+
+function noroffKristiansand() {
+	let location ="Noroff Kristiansand"
+	document.getElementById('gmap_canvas').src = "https://maps.google.com/maps?q=" + location + "&t=&z=12&ie=UTF8&iwloc=&output=embed"
+}
+
 //  Alex Code End 
         
 //  Benni Code Start 

@@ -366,8 +366,64 @@ p {
 
 }
 
+/* Subscribe */
+
+.subscribe_box{
+    padding: 10px;
+    background-color: #FFE7E7;        
+}
+
+.clear .sub_button{
+    padding: 15px 95px; 
+    background-color: #FF3D3D; 
+    border-radius: 6px; 
+    color: white; 
+    margin-top: 20px;
+    border: 2px solid #FF3D3D; 
+}
+
+/* Faglarere*/
+.prof_pic_name{
+    display: inline-block; 
+}
+
+.teacher-1{
+    border-radius: 80%;
+}
+
+#mce-EMAIL{
+    padding: 15px 60px;
+    border-radius: 6px; 
+    border: 1px solid white;
+    
+}
+
 
 /* map */
+
+.container .maploc a{
+    text-decoration: none; 
+    padding: 10px 20px; 
+    border: 1px solid #FF3D3D; 
+    border-radius: 8px; 
+    margin-right: 10px;
+    color: #FF3D3D;
+}
+
+.maploc{
+    margin-bottom: 10px;
+}
+
+.maploc a:hover{
+    background-color: #FF3D3D;
+    transition: 0.5s;
+    color: white;
+}
+
+.undertitler hr{
+    margin-bottom: 10px;
+}
+
 
 .kart{
   margin-bottom: 3em;
@@ -380,6 +436,7 @@ p {
 .spørsmål p{
   margin-top: -1em;
 }
+
 
 
 
