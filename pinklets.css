@@ -36,7 +36,7 @@ body {
 
 * {
   font-family: 'noto sans','Lato', Helvetica, sans-serif;
-  color: #333447;
+  /*color: #333447;*/
   line-height: 1.5;
 }
 
@@ -676,43 +676,97 @@ p {
 
 .RelNyheter{
     background-color: #FFF1F1; 
+    background-size: cover;
     height: 147px;
+    width: 100%;
     font-family: Noto Sans, Helvetica, sans-serif;
+    margin: 30px 0px 30px;
+
+}
+.RelNyheter h2{
+    margin-left: 18%;
+   padding-top: 40px;
+}
+
+.nythetContainer img{
+    width: 100%;
+    
+}
+
+.nythetContainer p{
+    margin-bottom: 50px;
 }
 footer{
 
     background-color: #012255;
-    color: whitesmoke;
-    font-family: Helvetica, Arial, sans-serif;
-    display: grid;
-    grid-template-columns: 10% 20% 20% 20% 20% 10%;
-    grid-template-rows: 50% 50%;
-    grid-row-gap: 20px;
-    height: 500px;
+    color: white;
+    font-family: Noto Sans, Helvetica, Arial, sans-serif;
+    
+    height: 600px;
     width: 101vw;
     margin-left: -1vw;
     margin-top: 20px;
     font-size: 1.2em;
 }
 
+footer li{
+    list-style: none;
+    
+}
 .footerLogo{
-    grid-column: 2/4;
-    width: 50%;
-    margin: 30px 10px 10px;
+    width: 20%;
+    margin: 45px  0px 20px;
     
 }
 
-.kontaktInfo{
-grid-column: 2/3;
-margin: 0px 10px 10px;
+footer a{
+    text-decoration: none;
+    color: whitesmoke;
 }
 
+footer a:hover{
+text-decoration: underline;
+  color: #FF3D3D;
+  transition: 0.5s;
+}
+.kontaktInfo{
+ 
+    color: whitesmoke;
+}
+
+.kontaktLink{
+    width: 150%;
+    color: #FF5F5F;
+}
+
+.kontaktLink:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+footer h4{
+    font-size: 1.2em;
+}
 .sortcutNavs{
-    grid-column: 4/6;
-    grid-row: 1;
     margin-top: 20px;
     text-align: right;
+    border-right: solid #FFF1F1 2px;
     
+}
+
+.sortcutNavs2{
+   
+    margin-top: 20px;
+    margin-left: 0;
+    text-align: left;
+    font-weight: bold;
+   
+
+}
+
+.sortcutNavs2 ul{
+    padding: 0;
+
 }
 
 .sortcutNavs ul{
@@ -721,21 +775,34 @@ margin: 0px 10px 10px;
 
 .sortcutNavs li{
     padding: 0;
-    list-style: none;
+    margin:25px;
+}
+
+.sortcutNavs2 li{
+    padding: 0;
     margin:25px;
 }
 
 .sosialeMedier{
-    grid-column: 3/6;
-    grid-row: 2;
-    margin-top: 120px;
-    text-align: right;
-    font-size: 2em;
-    
+   font-size: 0.8em;
+}
+.sosialeMedier ul li{
+  
+    margin: 15px 0px 15px;
+    padding-left: 0;
 }
 
-.sosialeMedier a{
-    margin: 20px 20px;
-    
+.sosialeMedier ul li:hover{
+    color: #FF5F5F;
+    transition: 0.5s;
 }
+
+.fab{
+    margin-right: 10px;
+}
+
+.mobilfooter{
+    display: none;
+}
+
 /* Merethes kode slutt */
