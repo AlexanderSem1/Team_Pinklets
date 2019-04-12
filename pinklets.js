@@ -23,6 +23,38 @@ function noroffKristiansand() {
 //  Alex Code End 
         
 //  Benni Code Start 
+
+/*document.getElementById("burgercon").addEventListener("click", function() {
+    let x = document.getElementsByClassName("mobile-remove");
+    //let y = document.getElementById("meny-b");       
+
+    if (x.style.display === "block") {
+        x.style.display = "none";
+        x.style.backgroundColor = "#FF5F5F";
+    }else {
+        x.style.display = "block";
+
+        //y.style.display = "block";
+    }
+
+});*/
+
+
+
+
+function burgercon() {
+    let x = document.getElementsByClassName("mobile-remove");      
+    let y = document.getElementById("mobile-background");  
+
+    if (x.style.display === "block") {
+        x.style.display = "none";
+        y.style.backgroundColor = "#FF5F5F";
+    }else {
+        x.style.display = "block";
+         y.style.backgroundColor = "#none";
+    }
+}
+
 //  Benni Code End 
         
 //  Faisal Code Start 
@@ -130,6 +162,119 @@ function myFunction7() {
         y.style.color = "black";
     }
 }
+
+    function myFunction8() {
+        var x = document.getElementsByClassName("information");
+        var y = document.getElementById("img8");
+        if (x[7].style.display === "none") {
+            x[7].style.display = "block";
+            y.style.transform = "rotate(180deg)";
+            y.style.color = "#FF5F5F";
+            y.style.transition = "0.5s";
+        } else {
+            x[7].style.display = "none";
+            y.style.transform = "rotate(0deg)";
+    
+            y.style.color = "black";
+        }
+    }
+
+        function myFunction9() {
+            var x = document.getElementsByClassName("information");
+            var y = document.getElementById("img9");
+            if (x[8].style.display === "none") {
+                x[8].style.display = "block";
+                y.style.transform = "rotate(180deg)";
+                y.style.color = "#FF5F5F";
+                y.style.transition = "0.5s";
+            } else {
+                x[8].style.display = "none";
+                y.style.transform = "rotate(0deg)";
+        
+                y.style.color = "black";
+            }
+        }
+
+        function myFunction10() {
+            var x = document.getElementsByClassName("information");
+            var y = document.getElementById("img10");
+            if (x[9].style.display === "none") {
+                x[9].style.display = "block";
+                y.style.transform = "rotate(180deg)";
+                y.style.color = "#FF5F5F";
+                y.style.transition = "0.5s";
+            } else {
+                x[9].style.display = "none";
+                y.style.transform = "rotate(0deg)";
+        
+                y.style.color = "black";
+            }
+        }
+
+        function myFunction11() {
+            var x = document.getElementsByClassName("information");
+            var y = document.getElementById("img11");
+            if (x[10].style.display === "none") {
+                x[10].style.display = "block";
+                y.style.transform = "rotate(180deg)";
+                y.style.color = "#FF5F5F";
+                y.style.transition = "0.5s";
+            } else {
+                x[10].style.display = "none";
+                y.style.transform = "rotate(0deg)";
+        
+                y.style.color = "black";
+            }
+        }
+
+        function myFunction12() {
+            var x = document.getElementsByClassName("information");
+            var y = document.getElementById("img12");
+            if (x[11].style.display === "none") {
+                x[11].style.display = "block";
+                y.style.transform = "rotate(180deg)";
+                y.style.color = "#FF5F5F";
+                y.style.transition = "0.5s";
+            } else {
+                x[11].style.display = "none";
+                y.style.transform = "rotate(0deg)";
+        
+                y.style.color = "black";
+            }
+        }
+
+        function myFunction13() {
+            var x = document.getElementsByClassName("information");
+            var y = document.getElementById("img13");
+            if (x[12].style.display === "none") {
+                x[12].style.display = "block";
+                y.style.transform = "rotate(180deg)";
+                y.style.color = "#FF5F5F";
+                y.style.transition = "0.5s";
+            } else {
+                x[12].style.display = "none";
+                y.style.transform = "rotate(0deg)";
+        
+                y.style.color = "black";
+            }
+        }
+
+        function myFunction14() {
+            var x = document.getElementsByClassName("information");
+            var y = document.getElementById("img14");
+            if (x[12].style.display === "none") {
+                x[12].style.display = "block";
+                y.style.transform = "rotate(180deg)";
+                y.style.color = "#FF5F5F";
+                y.style.transition = "0.5s";
+            } else {
+                x[12].style.display = "none";
+                y.style.transform = "rotate(0deg)";
+        
+                y.style.color = "black";
+            }
+        }
+
 
 
 // slider start
@@ -272,18 +417,18 @@ function mainContainerfunc()
 			var mainEngContainer = document.getElementById("mainEngContainer");
 			var mainEngLang = document.getElementById("langChar");
 			
-			if(mainNorContainer.style.display === "block"
-			  && mainEngContainer.style.display === "none"){
+			if(mainNorContainer.style.display === "none"
+			  && mainEngContainer.style.display === "block"){
 				
-				mainEngLang.innerHTML = "NOR";
-			mainNorContainer.style.display = "none";
-				mainEngContainer.style.display = "block";
+				mainEngLang.innerHTML = "EN";
+			    mainNorContainer.style.display = "block";
+				mainEngContainer.style.display = "none";
 			   
 			   }else{
-				   mainEngLang.innerHTML = "EN";
-				   mainNorContainer.style.display = "block";
-				   mainEngContainer.style.display = "none";
+				   mainEngLang.innerHTML = "NO";
+				   mainNorContainer.style.display = "none";
+                   mainEngContainer.style.display = "block";
 			   }
-		}
+        }
 
 // Merethes kode slutt 

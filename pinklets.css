@@ -117,9 +117,11 @@ p {
 
 /* menu - English to Norwegian */
 
-#mainEngContainer{
+/*#mainEngContainer{
     display: none; 
-}
+}*/
+
+
 
 /* bennis code */
 .clearfix::after {
@@ -176,7 +178,13 @@ p {
   transition: 1s;
 }
 
+.logo-m{
+  display: none;
+}
 
+.burger-icon{
+  display: none;
+}
 
 .meny{
     float: right;
@@ -213,6 +221,15 @@ p {
   font-weight: bold;
   margin-right: 20px;
 }
+
+.eng-trans{
+  display: none;
+}
+
+.eng-trans .meny-studier{
+  margin-right: 5px;
+}
+
 
 /* Header background */
 .background-img{
@@ -1016,7 +1033,7 @@ footer h4{
 }
 
 .nav .meny ul li{
-  display: inline;
+  display: block;
   color: white;
   font-size: 1em;
   padding: 0em 1em 0em 1em;
@@ -1043,27 +1060,40 @@ margin-left: 10px;
 }
 
 .logo{
-  float: left;
-  margin-top: 2.6em;
-  margin-left: 20px;
+  display: none;
 }
 
-.logo:hover{
+.logo-m:hover{
 transform: scale(1.1);
 transition: 1s;
 }
 
+.logo-m{
+  display: block;
+  float: left;
+  margin-top: 1.6em;
+  margin-left: 10px;
+}
 
+.burger-icon{
+  display: block;
+  font-size: 3em;
+  color: white;
+  float: right;
+}
 
 .meny{
   float: right;
   margin-top: 2em;
 }
 
-
 .logo img {
-width: 170px;
+width: 170%;
 }
+
+.logo-m img {
+  width: 130px;
+  }
 
 .nav .meny .lang a{
 color: #FF5F5F;
@@ -1080,6 +1110,7 @@ transition: 0.5s;
 }
 
 .meny-line{
+  display: none;
 border: 1.2px solid white;
 width: 82%;
 margin-right: 80px;
