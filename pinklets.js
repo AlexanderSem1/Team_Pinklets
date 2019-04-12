@@ -264,4 +264,26 @@ function hoverEffect2()  {
     }
 }
 
+// Alex - translation from Norwegian to English 
+
+function mainContainerfunc() 
+		{
+			var mainNorContainer = document.getElementById("mainNorContainer");
+			var mainEngContainer = document.getElementById("mainEngContainer");
+			var mainEngLang = document.getElementById("langChar");
+			
+			if(mainNorContainer.style.display === "block"
+			  && mainEngContainer.style.display === "none"){
+				
+				mainEngLang.innerHTML = "NOR";
+			mainNorContainer.style.display = "none";
+				mainEngContainer.style.display = "block";
+			   
+			   }else{
+				   mainEngLang.innerHTML = "EN";
+				   mainNorContainer.style.display = "block";
+				   mainEngContainer.style.display = "none";
+			   }
+		}
+
 // Merethes kode slutt 

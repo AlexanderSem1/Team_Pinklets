@@ -115,7 +115,12 @@ p {
 
 /* Pinklets code */
 
-/* menu */
+/* menu - English to Norwegian */
+
+#mainEngContainer{
+    display: none; 
+}
+
 /* bennis code */
 .clearfix::after {
     content: "";
@@ -307,6 +312,7 @@ p {
 
 .title h1{
   margin-top: -0.2em;
+    font-size: 2.4rem; 
 }
 
 .title h3{
