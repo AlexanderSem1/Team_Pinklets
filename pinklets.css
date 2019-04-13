@@ -56,11 +56,11 @@ h3 {
 }
 
 h4 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 h6 {
@@ -69,7 +69,7 @@ h6 {
 
 p {
   font-size: 1.125rem;
-  font-weight: 200;
+  font-weight: 100;
   line-height: 1.8;
 }
 
@@ -1167,12 +1167,12 @@ position: absolute;
 
 .dec-lines{
 opacity: 0.3;
-max-width: 3%;
+max-width: 40%;
 /*height: 126%;*/
 height: 100%;
 position: absolute;
 /*left: 15em;*/
-left: 40em;
+left: 20em;
 top: -10em;
 z-index: 2;
 /*transform: rotate(-50deg);*/
@@ -1248,12 +1248,16 @@ border-radius: 3px;
 padding:  0px 20px 0px 20px;
 z-index: 3;
 position: relative;
+height: 200px;
 }
 
+.btn{
+  margin-top:-32vh;
+  margin-right: 2vw;
+}
 .btn a{
 background-color: #FF5F5F;
-width: 200px;
-float: right;
+width: 400px;
 padding: 1em;
 border-radius: 5px;
 margin: 2em 0 2em 0;
@@ -1267,6 +1271,9 @@ background-color: #FF3D3D;
 transition: 0.5s;
 }
 
+.apply-text{
+  margin-top: 10vh;
+}
 .apply p{
 margin-top: -1em;
 }
@@ -1287,6 +1294,30 @@ margin-top: 30px;
 .gen-info h5, .gen-info2 h5{
 font-weight: bold;
 margin-bottom: -15px;
+font-size: 1.1em;
+}
+.gen-info h5 i{
+  font-size: 1.3em;
+  margin-left: 0;
+  margin-right: 1.5vw;
+}
+
+.gen-info2 h5 i{
+  font-size: 1.3em;
+  margin-left: 0;
+  margin-right: 1.5vw;
+}
+.gen-info p{
+  font-size: 1em;
+  margin-top: -4vh;
+  margin-left: 45vw;
+
+}
+.gen-info2 p{
+  font-size: 1em;
+  margin-top: -4vh;
+  margin-left: 45vw;
+
 }
 
 .header-sep-line{
@@ -1298,7 +1329,7 @@ border: 3px solid #FFF1F1;
 /*dropdown thingy*/
 /*Faisal code start*/
 .ingres p {
-width: 70%;
+width: 100%;
 font-size: 1.5em;
 color: #012255;
 font-weight: 100;
@@ -1327,7 +1358,7 @@ cursor: pointer;
 }
 .dropdownbutton .info-heading {
 
-font-size: 1em;
+font-size: 1.3em;
 cursor: pointer;
 }
 
@@ -1337,7 +1368,7 @@ transition: 0.5s;
 }
 
 .information{
-width: 71%;
+width: 76%;
 padding-left: 86px;
 margin-bottom: 70px;
 margin-top: 40px;
@@ -1360,7 +1391,7 @@ transition: 0.5s;
 }
 
 .qouteimg{
-width: 15%;
+width: 25%;
 margin-right: 40px;
 float: left;
 border-radius: 100%;
@@ -1394,7 +1425,9 @@ display: none;
 .subscribe_box{
   background-color: rgb(255, 242, 242);  
   margin-bottom: 500px; 
-  margin-top: 400px;     
+  margin-top: 400px;  
+  height: 500px;   
+
 }
 
 .subscribe_box h4{
@@ -1408,14 +1441,15 @@ padding: 0 0 15px 2em;
 }
 
 .clear .sub_button{
+  font-size: 1em;
   padding: 15px 60px;
-  margin-left: 30px;
+  margin-left: 45px;
   margin-bottom: 30px;
   width: 78.5%; 
   background-color: #FF5F5F; 
   border-radius: 6px; 
   color: white; 
-  margin-top: 20px;
+  margin-top: 30px;
   border: 2px solid #FF5F5F; 
 }
 
@@ -1429,20 +1463,21 @@ padding: 0 0 15px 2em;
 position: absolute;
 z-index: 2;
 width: 40%;
-margin-left: 55%;
-margin-top: 5%;
+margin-left: 70%;
+margin-top: -3%;
 }
 
 .brev-icon2{
 position: absolute;
 z-index: 2;
 width: 30%;
-margin-left: 55%;
+margin-left: 65%;
 margin-top: 35%;
 }
 
 #mce-EMAIL{
-margin-left: 30px;
+  font-size: 0.8em;
+margin-left: 45px;
 padding: 15px 60px;
 width: 50%;
 border-radius: 6px; 
@@ -1474,21 +1509,34 @@ transition: 0.5s;
 }
 
 .lærer p{
-margin-top: -15px;
+margin-top: -10vh;
+margin-right: 20vw;
+float: right;
+
 }
 
+.lærer h4{
+  float: right;
+  margin-top: -15vh;
+  margin-right: 20vw;
+ 
+}
 
 
 
 /* map */
 
 .container .maploc a{
+  display: inline-block;
   text-decoration: none; 
   padding: 10px 20px; 
   border: 1px solid #FF3D3D; 
   border-radius: 8px; 
-  margin-right: 10px;
+  margin-right: 40px;
+  margin-top: 30px;
+  
   color: #FF3D3D;
+  font-size: 1.3em;
 }
 
 .maploc{
@@ -1511,11 +1559,17 @@ margin-bottom: 3em;
 }
 /* Spørsmål */
 .far{
-font-size: 1.5em;
+font-size: 2em;
+margin-left: 5vw;
 }
 
+.spørsmål h4{
+  margin-top: -16vh;
+  margin-left: 25vw;
+}
 .spørsmål p{
 margin-top: -1em;
+margin-left: 25vw;
 }
 
 
@@ -1632,7 +1686,7 @@ background-color: #002A4D;
 color: white;
 font-family: Noto Sans, Helvetica, Arial, sans-serif;
 
-height: 600px;
+height: 1350px;
 max-width: 100%;
 margin-top: 20px;
 font-size: 1.2em;
@@ -1643,7 +1697,7 @@ list-style: none;
 
 }
 .footerLogo{
-width: 20%;
+width: 55%;
 margin: 45px  0px 20px;
 
 }
@@ -1679,17 +1733,17 @@ transition: 0.5s;
 footer h4{
 font-size: 1.2em;
 }
+
 .sortcutNavs{
 margin-top: 20px;
-text-align: right;
-
-
+text-align: left;
+margin-left: -30px;
 }
 
 .sortcutNavs2{
 
-margin-top: 20px;
-margin-left: 0;
+margin-top: -45vh;
+margin-left: 30vw;
 text-align: left;
 font-weight: bold;
 border-left: solid #FFF1F1 1px;
@@ -1706,20 +1760,21 @@ padding: 0;
 
 .sortcutNavs li{
 padding: 0;
-margin:25px;
+margin:35px;
 }
 
 .sortcutNavs2 li{
 padding: 0;
-margin:25px;
+margin:35px;
 }
 
 .sosialeMedier{
 font-size: 0.8em;
+margin-left: -30px;
 }
 .sosialeMedier ul li{
-
-margin: 15px 0px 15px;
+font-size: 1.3em;
+margin: 25px 0px 15px;
 padding-left: 0;
 }
 
@@ -1729,7 +1784,7 @@ transition: 0.5s;
 }
 
 .fab{
-margin-right: 10px;
+margin-right: 25px;
 }
 
 .subFooter{
@@ -1750,4 +1805,80 @@ color: #AAAAAA;
 
 
 }
+/*------------------mobil max460-------------------------------------------*/
+@media only screen and (max-width: 460px) {
 
+  .apply{
+    background-color: #FFF1F1;
+    border-radius: 3px;
+    padding:  0px 20px 0px 20px;
+    z-index: 3;
+    position: relative;
+    height: 150px;
+    }
+    
+    .btn{
+      margin-top:-32vh;
+      margin-right: 2vw;
+    }
+    .btn a{
+    background-color: #FF5F5F;
+    width: 350px;
+    padding: 1em;
+    border-radius: 5px;
+    margin: 4em 0 2em 0;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    }
+    
+    
+    .apply-text{
+      margin-top: 8vh;
+      font-size: 0.8em;
+    }
+    .apply h4{
+      font-size: 1.2em;
+    }
+    .apply p{
+      font-size: 1em;
+    margin-top: -1em;
+    }
+    
+    
+
+  .gen-info{
+    margin-top: 30px;
+    
+    }
+    .gen-info h5, .gen-info2 h5{
+    font-weight: bold;
+    margin-bottom: -15px;
+    font-size: 0.8em;
+    }
+    .gen-info h5 i{
+      font-size: 1.2em;
+      margin-left: 0;
+      margin-right: 1.5vw;
+    }
+    
+    .gen-info2 h5 i{
+      font-size: 1.3em;
+      margin-left: 0;
+      margin-right: 1.5vw;
+    }
+    .gen-info p{
+      font-size: 0.7em;
+      margin-top: -2vh;
+      margin-left: 45vw;
+    
+    }
+    .gen-info2 p{
+      font-size: 0.7em;
+      margin-top: -2vh;
+      margin-left: 45vw;
+    
+    }
+
+
+}
