@@ -30,104 +30,110 @@ function myFunction1() {
     var x = document.getElementsByClassName("information");
     var y = document.getElementById("img1");
 
-    if (x[0].style.display === "none") {
+    if (x[0].style.display === "block") {
+        x[0].style.display = "none";
+        y.style.transform = "rotate(0deg)";
+		y.style.color = "black";
+        
+    } else {
         x[0].style.display = "block";
         y.style.transform = "rotate(180deg)";
 		 y.style.color = "#FF5F5F";
         y.style.transition = "0.5s";
-    } else {
-        x[0].style.display = "none";
-        y.style.transform = "rotate(0deg)";
-		y.style.color = "black";
     }
 }
 function myFunction2() {
     var x = document.getElementsByClassName("information");
     var y = document.getElementById("img2");
-    if (x[1].style.display === "none") {
+    if (x[1].style.display === "block") {
+        x[1].style.display = "none";
+        y.style.transform = "rotate(0deg)";
+		y.style.color = "black";
+        
+    } else {
         x[1].style.display = "block";
         y.style.transform = "rotate(180deg)";
 		 y.style.color = "#FF5F5F";
         y.style.transition = "0.5s";
-    } else {
-        x[1].style.display = "none";
-        y.style.transform = "rotate(0deg)";
-		y.style.color = "black";
     }
 }
 
 function myFunction3() {
     var x = document.getElementsByClassName("information");
     var y = document.getElementById("img3");
-    if (x[2].style.display === "none") {
+    if (x[2].style.display === "block") {
+        x[2].style.display = "none";
+        y.style.transform = "rotate(0deg)";
+		y.style.color = "black";
+        
+    } else {
         x[2].style.display = "block";
         y.style.transform = "rotate(180deg)";
 		 y.style.color = "#FF5F5F";
         y.style.transition = "0.5s";
-    } else {
-        x[2].style.display = "none";
-        y.style.transform = "rotate(0deg)";
-		y.style.color = "black";
     }
 }
 
 function myFunction4() {
     var x = document.getElementsByClassName("information");
     var y = document.getElementById("img4");
-    if (x[3].style.display === "none") {
+    if (x[3].style.display === "block") {
+        x[3].style.display = "none";
+        y.style.transform = "rotate(0deg)";
+		y.style.color = "black";
+        
+    } else {
         x[3].style.display = "block";
         y.style.transform = "rotate(180deg)";
 		 y.style.color = "#FF5F5F";
         y.style.transition = "0.5s";
-    } else {
-        x[3].style.display = "none";
-        y.style.transform = "rotate(0deg)";
-		y.style.color = "black";
     }
 }
 function myFunction5() {
     var x = document.getElementsByClassName("information");
     var y = document.getElementById("img5");
-    if (x[4].style.display === "none") {
+    if (x[4].style.display === "block") {
+        x[4].style.display = "none";
+        y.style.transform = "rotate(0deg)";
+		y.style.color = "black";
+        
+    } else {
         x[4].style.display = "block";
         y.style.transform = "rotate(180deg)";
 		 y.style.color = "#FF5F5F";
         y.style.transition = "0.5s";
-    } else {
-        x[4].style.display = "none";
-        y.style.transform = "rotate(0deg)";
-		 y.style.color = "black";
     }
 }
 
 function myFunction6() {
     var x = document.getElementsByClassName("information");
     var y = document.getElementById("img6");
-    if (x[5].style.display === "none") {
+    if (x[5].style.display === "block") {
+        x[5].style.display = "none";
+        y.style.transform = "rotate(0deg)";
+		y.style.color = "black";
+        
+    } else {
         x[5].style.display = "block";
         y.style.transform = "rotate(180deg)";
 		 y.style.color = "#FF5F5F";
         y.style.transition = "0.5s";
-    } else {
-        x[5].style.display = "none";
-        y.style.transform = "rotate(0deg)";
-		y.style.color = "black";
     }
 }
 
 function myFunction7() {
     var x = document.getElementsByClassName("information");
     var y = document.getElementById("img7");
-    if (x[6].style.display === "none") {
-        x[6].style.display = "block";
-        y.style.transform = "rotate(180deg)";
-        y.style.color = "#FF5F5F";
-        y.style.transition = "0.5s";
-    } else {
+    if (x[6].style.display === "block") {
         x[6].style.display = "none";
         y.style.transform = "rotate(0deg)";
-
-        y.style.color = "black";
+		y.style.color = "black";
+        
+    } else {
+        x[6].style.display = "block";
+        y.style.transform = "rotate(180deg)";
+		 y.style.color = "#FF5F5F";
+        y.style.transition = "0.5s";
     }
 }
 

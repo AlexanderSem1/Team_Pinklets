@@ -56,11 +56,11 @@ h3 {
 }
 
 h4 {
-  font-size: 1.125rem;
+  font-size: 1.13rem;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1.16rem;
 }
 
 h6 {
@@ -68,8 +68,8 @@ h6 {
 }
 
 p {
-  font-size: 1.125rem;
-  font-weight: 200;
+  font-size: 1rem;
+  font-weight: 100;
   line-height: 1.8;
 }
 
@@ -266,6 +266,10 @@ p {
   transform: rotate(0deg);
 }
 
+
+#crum1{
+    display: none;
+}
 .crum{
   float: left;
 }
@@ -532,25 +536,25 @@ p {
     border-radius: 80%;
 }
 
-.lærer{
+.lærer-info{
   max-width: 100%;
   padding: 10px 0 10px 0;
 }
 
-.lærer h4 a{
+.lærer-info h4{
   color: #FF5F5F;
 }
 
-.lærer h4 a:hover{
+.lærer-info h4:hover{
   opacity: 0.5;
   transition: 0.5s; 
 }
 
-.lærer p{
+.lærer-info p{
   margin-top: -15px;
 }
 
-
+/* merethe hadde lagt til ny classe lærer-info, kunne ikke se noen <a> i lærer seksjonene så tok dette bort, krysser fingrene for at alt er riktig nå*/
 
 
 /* map */
@@ -662,12 +666,14 @@ p {
 .RelNyheter{
   background-color: #FFF1F1; 
   max-width: 100%;
-  /*height: 15%;*/
+  height: 15%;
   margin: 100px 0 70px 0;
 
 }
 .RelNyheter h2{
-margin-top: 30px;
+
+margin-left: 18%;
+padding-top: 30px;
 }
 
 
@@ -994,6 +1000,7 @@ footer h4{
 }
 
 .nav {
+    display: none;
   z-index: 3;
   position: relative;
   margin-bottom: 100px;
@@ -1086,8 +1093,8 @@ background-position: center;
 background-repeat: no-repeat; 
 background-size: cover;
 filter: blur(4px);
-width: 100%;
-height: 500px; 
+width: 300vw;;
+height: 800px; 
 position: absolute;
 animation-name: imageheader;
 animation-iteration-count: infinite;
@@ -1103,16 +1110,16 @@ to {background-image: url("image/studentsheader.jpg"); display: block;transition
 
 .backGround-filter{
 opacity: 0.8;
-width: 100%;
-height: 500px;
+width: 300vw;
+height: 800px;
 position: absolute;
 }
 
 .dec-lines{
 opacity: 0.3;
-max-width: 3%;
+max-width: 100%;
 /*height: 126%;*/
-height: 100%;
+height: 150%;
 position: absolute;
 /*left: 15em;*/
 left: 40em;
@@ -1136,8 +1143,14 @@ z-index: 2;
 transform: rotate(0deg);
 }
 
+
+#crum1{
+    display: inline-block;
+}
 .crum{
 float: left;
+margin-top: 20%;
+margin-left: 20%;
 }
 
 .crum ul{
@@ -1168,20 +1181,27 @@ color: white;
 
 
 .crum .crum-end a{
+    display: none;
 color: #FF5F5F;
 }
 
+.title{
+    width:250vw;
+    margin-left: 20%;
+}
 .title h1, h3{
 color: white;
 }
 
 .title h1{
 margin-top: -0.2em;
+font-size: 4rem;
 }
 
 .title h3{
 margin-top: -0.8em;
 margin-bottom: 3em;
+font-size: 2rem;
 }
 
 
@@ -1191,17 +1211,27 @@ border-radius: 3px;
 padding:  0px 20px 0px 20px;
 z-index: 3;
 position: relative;
+width: 270vw;
+height: 500px;
+margin-left: 10%;
+margin-top:50%;
 }
 
+.btn{
+    float: left;
+    margin-top:-62vh;
+}
 .btn a{
 background-color: #FF5F5F;
-width: 200px;
-float: right;
+width: 245vw;
+height: 50px;
+float: center;
 padding: 1em;
 border-radius: 5px;
 margin: 2em 0 2em 0;
 text-align: center;
 color: white;
+font-size: 3rem;
 text-decoration: none;
 }
 
@@ -1210,8 +1240,14 @@ background-color: #FF3D3D;
 transition: 0.5s;
 }
 
+.apply h4{
+    margin-top: 7em;
+    font-size: 2.5rem;
+}
 .apply p{
+   
 margin-top: -1em;
+font-size: 2rem;
 }
 
 .text-link{
@@ -1222,11 +1258,26 @@ color: red;
 opacity: 0.5;
 transition: 0.2s;
 }
+#gen-info-C{
+    width: 300%;
+    text-align: left;
+    margin-left: 25%;
+}
 
+#gen-info-C h5{
+    font-size: 3.5rem;
+}
+
+#gen-info-C p{
+    margin-left: 45%;
+    margin-top: -5%;
+    float: center;
+    font-size: 3rem;
+}
 .gen-info{
 margin-top: 30px;
-
 }
+
 .gen-info h5, .gen-info2 h5{
 font-weight: bold;
 margin-bottom: -15px;
@@ -1234,23 +1285,35 @@ margin-bottom: -15px;
 
 .header-sep-line{
 border: 3px solid #FFF1F1;
+width: 80%;
+margin-left: 0;
 
+}
+
+.ingres{
+    width: 250%;
 }
 
 
 /*dropdown thingy*/
 /*Faisal code start*/
 .ingres p {
-width: 70%;
-font-size: 1.5em;
+width: 100%;
+font-size: 4rem;
 color: #012255;
 font-weight: 100;
-margin-top: 70px;
-margin-bottom: 100px;
+margin-left: 15%;
+
 }
 /*.drop-down-hr{
 margin-bottom: -20px;
 }*/
+
+.dropdownbutton{
+    width: 300%;
+    margin-left: 20%;
+    font-size: 3.5rem;
+}
 .dropdownbutton li{
 display: inline;
 padding: 10px 10px 10px 10px;
@@ -1279,6 +1342,17 @@ opacity: 0.5;
 transition: 0.5s;
 }
 
+.information p{
+    width: 250%;
+    margin-left: 50%;
+    font-size: 2.5rem;
+}
+.information h4{
+    width: 250%;
+    margin-left: 50%;
+    font-size: 3rem;
+}
+
 .information{
 width: 71%;
 padding-left: 86px;
@@ -1303,8 +1377,8 @@ transition: 0.5s;
 }
 
 .qouteimg{
-width: 15%;
-margin-right: 40px;
+width: 60%;
+margin-right: 80px;
 float: left;
 border-radius: 100%;
 box-shadow: -1px -2px 59px -22px rgba(255, 61, 61, 0.6S);
@@ -1313,8 +1387,10 @@ box-shadow: -1px -2px 59px -22px rgba(255, 61, 61, 0.6S);
 width: 100%;
 }
 .st-text li{
+    width: 250%;
+    margin-left: 50%;
 list-style-type: circle;
-font-size: 1.2em;
+font-size: 2.5rem;
 line-height: 2em;
 }
 .so-heading{
@@ -1335,11 +1411,15 @@ display: none;
 /* Subscribe */
 
 .subscribe_box{
+    width: 300%;
   background-color: rgb(255, 242, 242);  
   margin-bottom: 500px; 
   margin-top: 400px;     
 }
-
+.subscribe_box h5{
+    margin-left: 8%;
+    font-size: 3rem;
+}
 .subscribe_box h4{
 padding: 0 0 15px 1.5em;
 margin-bottom: -10px;
@@ -1347,18 +1427,26 @@ font-size: 1.5em;
 }
 
 .subscribe_box p{
+    font-size: 2.5rem;
 padding: 0 0 15px 2em;
 }
 
+input{
+    font-size: 2rem;
+    margin-left: 10%;
+}
+
+
 .clear .sub_button{
   padding: 15px 60px;
-  margin-left: 30px;
+  margin-left: 10%;
   margin-bottom: 30px;
   width: 78.5%; 
+  height: 120px;
   background-color: #FF5F5F; 
   border-radius: 6px; 
   color: white; 
-  margin-top: 20px;
+  margin-top: 5%;
   border: 2px solid #FF5F5F; 
 }
 
@@ -1370,7 +1458,7 @@ padding: 0 0 15px 2em;
 
 .brev-icon{
 position: absolute;
-z-index: 2;
+z-index: 3;
 width: 40%;
 margin-left: 55%;
 margin-top: 5%;
@@ -1398,26 +1486,42 @@ border: 1px solid white;
   display: inline-block; 
 }*/
 
+ h2{
+     font-size: 4.5rem;
+    margin-left: 18%;
+    width: 275vw;
+ }
+
+ .hr-faglærere{
+     width: 300%;
+ }
 .teacher-1{
   border-radius: 80%;
+  width: 80%;
+margin-left: 38%;
+margin-top: 20%;
 }
 
-.lærer{
-max-width: 100%;
+.lærer-info{
+width: 100%;
 padding: 10px 0 10px 0;
+margin-top: -90%;
+margin-left: 138%;
 }
 
-.lærer h4 a{
+.lærer-info h4{
 color: #FF5F5F;
+font-size: 3.5rem;
 }
 
-.lærer h4 a:hover{
+.lærer-info h4:hover{
 opacity: 0.5;
 transition: 0.5s; 
 }
 
-.lærer p{
+.lærer-info p{
 margin-top: -15px;
+font-size: 3rem;
 }
 
 
@@ -1425,13 +1529,26 @@ margin-top: -15px;
 
 /* map */
 
+.hr-map{
+    width: 100%;
+}
+
+#hitta-mig{
+    width: 275vw;
+    margin-left: 10%;
+}
+
+#hitta-mig h2{
+    margin-left:0;
+}
 .container .maploc a{
   text-decoration: none; 
-  padding: 10px 20px; 
+  padding: 40px 60px; 
   border: 1px solid #FF3D3D; 
   border-radius: 8px; 
-  margin-right: 10px;
+  margin-right: 50px;
   color: #FF3D3D;
+  font-size: 3rem;
 }
 
 .maploc{
@@ -1450,17 +1567,26 @@ margin-top: -15px;
 
 
 .kart{
-margin-bottom: 3em;
+margin-bottom: 5em;
+margin-top: 5em;
 }
 /* Spørsmål */
-.far{
-font-size: 1.5em;
+.Q{
+font-size: 7em;
+margin-left: 12%;
 }
 
-.spørsmål p{
+.spørsmål p, .spørsmål h4{
 margin-top: -1em;
+font-size: 4em;
+margin-left: 25%;
 }
-
+.spørsmål h4{
+    margin-top: -4.5em;
+}
+#spørsmål{
+    width: 275vh;
+}
 
 
 
@@ -1478,9 +1604,11 @@ display: none
     
 }  
 .slidercontainer {  
+    width: 250%;
+    margin-left: 50%;
 max-width: 1000px;  
 position: relative;  
-margin: auto;  
+ 
 }  
 .previous, .next {  
 cursor: pointer;  
@@ -1531,28 +1659,41 @@ to {
 
 .RelNyheter{
 background-color: #FFF1F1; 
-max-width: 100%;
-/*height: 15%;*/
-margin: 100px 0 70px 0;
+min-width: 300%;
+
+height: 25%;
+margin: 200px 0 70px 0;
 
 }
 .RelNyheter h2{
-margin-top: 30px;
+
+margin-left: 10%;
+
 }
 
 
 .nythetContainer{
 margin-bottom: 100px;
+width: 275vw;
 
 }
 
 .nythetContainer img{
-width: 100%;
+width: 80%;
+margin-left: 10%;
 
 }
-
+#nyhetH, #nyhetH1, #nyhetH2{
+margin-left: 10%;
+font-size: 3.5em;
+width: 80%;
+}
 .nythetContainer p{
+    width: 80%;
 margin-bottom: 50px;
+font-weight: lighter;
+margin-left: 10%;
+font-size: 2.5em;
 }
 
 /*.img-h4 a:hover{
@@ -1575,19 +1716,20 @@ background-color: #002A4D;
 color: white;
 font-family: Noto Sans, Helvetica, Arial, sans-serif;
 
-height: 600px;
-max-width: 100%;
+height: 3800px;
+min-width: 300%;
 margin-top: 20px;
 font-size: 1.2em;
 }
 
 footer li{
 list-style: none;
+font-size: 3.5em;
 
 }
 .footerLogo{
-width: 20%;
-margin: 45px  0px 20px;
+width: 55%;
+margin: 100px  0px 40px 100px;
 
 }
 
@@ -1607,7 +1749,13 @@ color: whitesmoke;
 }
 .kontaktInfo p, .kontaktInfo h4{
 line-height: 10px; 
+margin-left: 80px;
 }
+
+.kontaktInfo p{
+    font-size: 3em;
+}
+
 .kontaktLink{
 line-height: -10%;
 width: 150%;
@@ -1620,19 +1768,21 @@ transition: 0.5s;
 }
 
 footer h4{
-font-size: 1.2em;
+font-size: 4em;
 }
-.sortcutNavs{
-margin-top: 20px;
-text-align: right;
 
+.sortcutNavs{
+margin-top: 300px;
+text-align: left;
+margin-right: 60%;
+margin-left: 80px;
 
 }
 
 .sortcutNavs2{
 
-margin-top: 20px;
-margin-left: 0;
+margin-top: -750px;
+margin-left: 680px;
 text-align: left;
 font-weight: bold;
 border-left: solid #FFF1F1 1px;
@@ -1649,20 +1799,27 @@ padding: 0;
 
 .sortcutNavs li{
 padding: 0;
-margin:25px;
+margin:45px;
 }
 
 .sortcutNavs2 li{
 padding: 0;
-margin:25px;
+margin:45px;
 }
 
 .sosialeMedier{
-font-size: 0.8em;
+font-size: 1em;
+margin-top:300px;
+margin-left: 80px;
 }
+
+.sosialeMedier h3{
+    font-size: 4em;
+}
+
 .sosialeMedier ul li{
 
-margin: 15px 0px 15px;
+margin: 45px 0px 45px;
 padding-left: 0;
 }
 
@@ -1672,16 +1829,17 @@ transition: 0.5s;
 }
 
 .fab{
-margin-right: 10px;
+margin-right: 60px;
 }
 
 .subFooter{
 padding: 0.1px 0 0.1px 0;
 background-color: #002543;
-max-width: 100%;
+min-width: 300%;
 
 }
 .subFooter h6{
+    font-size: 2em;
 margin-left: 18%;
 color: #AAAAAA;
 
