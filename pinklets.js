@@ -24,7 +24,18 @@ function noroffKristiansand() {
         
 //  Benni Code Start 
 
-/*document.getElementById("burgercon").addEventListener("click", function() {
+function burgercon() {
+            let x = document.getElementById("navigation-bar"); 
+            if (x.style.display === "block"){
+                x.style.display = "none"; 
+             //   x.style.backgroundColor = "#FF5F5F";
+            }else {
+                x.style.display = "block"; 
+            }
+        }
+    
+
+/*function burgercon () {
     let x = document.getElementsByClassName("mobile-remove");
     //let y = document.getElementById("meny-b");       
 
@@ -42,7 +53,7 @@ function noroffKristiansand() {
 
 
 
-function burgercon() {
+/*function burgercon() {
     let x = document.getElementsByClassName("mobile-remove");      
     let y = document.getElementById("mobile-background");  
 
@@ -53,7 +64,7 @@ function burgercon() {
         x.style.display = "block";
          y.style.backgroundColor = "#none";
     }
-}
+}*/
 
 //  Benni Code End 
         

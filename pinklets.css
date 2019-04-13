@@ -1023,11 +1023,24 @@ footer h4{
 }
 
 .nav {
-  z-index: 3;
-  position: relative;
-  margin-bottom: 100px;
+    z-index: 3;
+    position: relative;
+    margin-bottom: 100px;
+    background-color: #FF5F5F;   
 }
 
+#navigation-bar{
+    display: none;  
+    }
+    
+.background-img be-red{ 
+    background-color:#FF5F5F;    
+    }
+    
+
+    
+    
+⁄
 .nav .meny ul{
   color: #002C39;
 }
