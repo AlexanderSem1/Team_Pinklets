@@ -20,6 +20,21 @@ function noroffKristiansand() {
 	document.getElementById('gmap_canvas').src = "https://maps.google.com/maps?q=" + location + "&t=&z=12&ie=UTF8&iwloc=&output=embed"
 }
 
+//Email Reg-ex
+
+function validateMyForm(){
+    let regExEmail = /^[a-zA-Z0-9._-][2]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$/;
+    let inputEmail = document.getElementById('emailRegEx').value; 
+    
+(function verifyEmail(){
+    if(inputEmail.match(regExEmail)){
+        return true;
+    } else {
+        document.getElementById('emailError').style.display = "inline"; 
+    }
+})(); 
+}
+
 //  Alex Code End 
         
 //  Benni Code Start 
