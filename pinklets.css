@@ -237,7 +237,7 @@ p {
   background-position: center;
   background-repeat: no-repeat; 
   background-size: cover;
-  filter: blur(4px);
+  /*filter: blur(4px);*/
   width: 100%;
   height: 500px; 
   position: absolute;
@@ -1027,14 +1027,14 @@ footer h4{
     z-index: 3;
     position: relative;
     margin-bottom: 100px;
-    background-color: #FF5F5F;   
+     
 }
 
 #navigation-bar{
     display: none;  
     }
     
-.background-img be-red{ 
+.background-img .be-red{ 
     background-color:#FF5F5F;    
     }
     
@@ -1087,6 +1087,9 @@ transition: 1s;
   float: left;
   margin-top: 1.6em;
   margin-left: 10px;
+
+  z-index: 4;
+  position: relative;
 }
 
 .burger-icon{
@@ -1094,11 +1097,23 @@ transition: 1s;
   font-size: 3em;
   color: white;
   float: right;
+
+
+  z-index: 4;
+    position: relative;
 }
 
 .meny{
   float: right;
   margin-top: 2em;
+
+  background-color: #FF5F5F;
+    position: absolute;
+    height: 100vw;   
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
 }
 
 .logo img {
@@ -1142,7 +1157,7 @@ background-image: url("image/studentsheader.jpg");
 background-position: center;
 background-repeat: no-repeat; 
 background-size: cover;
-filter: blur(4px);
+/*filter: blur(4px);*/
 width: 100%;
 height: 500px; 
 position: absolute;
@@ -1172,11 +1187,11 @@ max-width: 40%;
 height: 100%;
 position: absolute;
 /*left: 15em;*/
-left: 20em;
+left: 10em;
 top: -10em;
 z-index: 2;
 /*transform: rotate(-50deg);*/
-transform: rotate(-35deg);
+transform: rotate(-11deg);
 }
 
 .dec-lines2{
