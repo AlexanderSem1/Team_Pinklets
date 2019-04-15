@@ -35,36 +35,6 @@ function burgercon() {
         }
     
 
-/*function burgercon () {
-    let x = document.getElementsByClassName("mobile-remove");
-    //let y = document.getElementById("meny-b");       
-
-    if (x.style.display === "block") {
-        x.style.display = "none";
-        x.style.backgroundColor = "#FF5F5F";
-    }else {
-        x.style.display = "block";
-
-        //y.style.display = "block";
-    }
-
-});*/
-
-
-
-
-/*function burgercon() {
-    let x = document.getElementsByClassName("mobile-remove");      
-    let y = document.getElementById("mobile-background");  
-
-    if (x.style.display === "block") {
-        x.style.display = "none";
-        y.style.backgroundColor = "#FF5F5F";
-    }else {
-        x.style.display = "block";
-         y.style.backgroundColor = "#none";
-    }
-}*/
 
 //  Benni Code End 
         
